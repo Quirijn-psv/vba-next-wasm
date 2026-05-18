@@ -34,14 +34,14 @@
 
             background-color: #000000;
             color: #FFFFFF;
-            padding: 0;
+            padding: 0;i
             margin: 0;
             width: 100vw;
             height: 100vh;
             font-family: 'Myriad Set Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
         }
 
-        hr {
+        hr {uu
             color: white;
         }
 
@@ -586,11 +586,11 @@
             l += (window.innerWidth - gbaWidth) / 2;
             canvas.style = 'width:' + gbaWidth + 'px;height:' + gbaHeight + 'px;left:' + l + 'px;'
             adjustVKLayout()
-        }
+        window.onresize = function() { setTimeout(adjustSize, 300) }
+window.onorientationchange = function() { setTimeout(adjustSize, 300) }
 
-        window.onresize = adjustSize
-        window.onorientationchange = adjustSize
-        adjustSize()
+
+ 
 
 
         function handleTouch(event) {
